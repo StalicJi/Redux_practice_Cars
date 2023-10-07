@@ -3,12 +3,12 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const carsSlice = createSlice({
     name: 'cars',
     initialState: {
-        searchTrem : '',
+        searchTerm : '',
         data: []
     },
     reducers: {
         changeSearchTerm(state, action) {
-            state.searchTrem = action.payload;
+            state.searchTerm = action.payload;
         },
         addCar(state, action) {
             //提示：action.payload === { name:'abc', cost:140 } 
